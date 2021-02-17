@@ -5,13 +5,13 @@ Predict the Bitcoin price will go up or not at the next candlestick
 ## Usage
 
 ### Prepare Dataset
-\\\
-python preprocess_data.py {order_currency} {chart_intervals} {windows} {dimension}
+~~~
+python preprocess_data.py {order_currency} {chart_intervals} {windows} {dimension}\n
 python generatedata.py {root} {original_dir} {destination_dir}
-\\\
+~~~
 ex
 '''
-python preprocess_data.py BTC 24h 20 50
+python preprocess_data.py BTC 24h 20 50\n
 python generatedata.py dataset 20_50/BTC dataset_BTC_20_50
 '''
 
