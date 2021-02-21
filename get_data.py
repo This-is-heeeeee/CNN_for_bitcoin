@@ -40,7 +40,7 @@ def get_bithumb_data(order_currency, payment_currency, chart_intervals, fname):
             df.index = df.index.tz_convert('Asia/Seoul')
             df.index = df.index.tz_localize(None)
             df = df.astype(float)
-            train_size = int(len(df)/2)
+            train_size = int(2*len(df)/3)
             _index = df.index[train_size]
             df_training = df.loc[:_index,:]
             df_testing = df.loc[_index:,:]

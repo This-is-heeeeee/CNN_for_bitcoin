@@ -59,6 +59,6 @@ for root, dirs, files in os.walk("{}/{}".format(pathdir, origindir)) :
                 copyfile(origin, destination)
                 counttest += 1
 
-print (counttest)
 print (counttrain)
-    
+print (counttest)
+

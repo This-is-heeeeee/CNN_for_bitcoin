@@ -1,0 +1,21 @@
+==========
+50epochs_8batch_cnn
+TN : 147
+FN : 156
+TP : 289
+FP : 230
+TPR : 0.6494382022471911
+FPR : 0.610079575596817
+Accuracy : 0.53
+Specificity : 0.39
+Sensitivity : 0.649
+mcc : 0.041
+              precision    recall  f1-score   support
+
+           0       0.49      0.39      0.43       377
+           1       0.56      0.65      0.60       445
+
+    accuracy                           0.53       822
+   macro avg       0.52      0.52      0.52       822
+weighted avg       0.52      0.53      0.52       822
+==========

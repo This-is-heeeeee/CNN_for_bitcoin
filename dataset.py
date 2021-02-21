@@ -12,8 +12,8 @@ def dataset(base_dir) :
             file_path = os.path.join(root, filename)
             assert file_path.startswith(base_dir)
             suffix = file_path[len(base_dir):]
-            suffix = suffix.lstrip("/")
-            label = suffix.split("/")[0]
+            suffix = suffix.lstrip("\\")
+            label = suffix.split("\\")[0]
             if label is "1" or label is "0":
                 d[label].append(file_path)
 
@@ -43,4 +43,4 @@ def dataset(base_dir) :
 
     return X, y, tags
 
-#dataset("{}/dataset/dataset_BTC_20_50/train".format(os.getcwd()),50)
+#dataset("{}/dataset/dataset_BTC_100_50/test".format(os.getcwd()))

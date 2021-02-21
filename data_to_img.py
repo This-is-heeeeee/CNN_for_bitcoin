@@ -32,6 +32,8 @@ def make_candlechart(fname, seq_len, dataset_type, dimension) :
     mc = mpf.make_marketcolors(up = 'tab:red', down = 'tab:blue', edge = 'inherit')
     myStyle = mpf.make_mpf_style(marketcolors = mc)
 
+    plt.style.use('dark_background')
+
     for i in range(0, len(df)) :
         c = df.iloc[i : i + int(seq_len), :]
         if len(c) == int(seq_len) :
